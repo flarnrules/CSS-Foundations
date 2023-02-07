@@ -15,16 +15,19 @@
 
 At it's most basic level, CSS works like this:
 
-`selector {
-    property: value;
-}`
+    selector {
+        property1: value1;
+        property2: value2;
+        property3: value3;
+    }
 
 
 The below diagram outlines the basic syntax for CSS
 
 ![Alt text](https://cdn.statically.io/gh/TheOdinProject/curriculum/05ce472eabf8e04eeb2cc9139e66db884074fd7d/foundations/html_css/css-foundations/imgs/00.jpg)
 
-> # Side note on <div>
+> # Side note on `<div>`
+>
 > A `<div>` is one of the basic HTML elements. It is an empty container. Generally we want to use other elements like `<h1>` or `<p>` for content, but sometimes you will just need a container. In The Odin Project we will use plain `<div>`s to start, but later we will go into more detail.
 
 
