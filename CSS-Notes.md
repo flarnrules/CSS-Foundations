@@ -59,4 +59,46 @@ The below diagram outlines the basic syntax for CSS
 >
 > A `<div>` is one of the basic HTML elements. It is an empty container. Generally we want to use other elements like `<h1>` or `<p>` for content, but sometimes you will just need a container. In The Odin Project we will use plain `<div>`s to start, but later we will go into more detail.
 
+## 3 Selectors
+
+Selectors refer to the HTML elements to which CSS rules apply; they're what's being "selected for each rule. Below are a few selectors that might get used a lot by everyone, so good to start for beginners:
+
+### Common Selector 1 - ***The Universal Selector***
+
+The universal selector will select elements of any type, hence the name "universal", and the syntax to call it is simply *
+
+```css
+* {
+    color: purple;
+}
+```
+
+### Common Selector 2 - ***Type Selectors***
+
+A type selector (otherwise known as an element selector), will select all elements of a given element type, and the syntax is just the name of the element:
+
+```css
+
+<!-- index.html -->
+
+<div>Hello, World!</div>
+<div>Hello, again!</div>
+<p> Hope you are having a *fiiine* day</p>
+<div>You too pal!</div>
+
+```
+
+```css
+
+/* styles.css */
+
+div {
+    color: white;
+}
+
+```
+
+Up above, the three `<div>` elements are being selected, while the `<p>` elements are not.
+
+### Common Selector 3 - ***Class Selectors***
 
