@@ -8,7 +8,7 @@
 
 1. Learning objectives
 2. Basic Syntax
-3. Selectors
+3. Common Selectors
     1. Universal Selector
     2. Type Selectors
     3. Class Selectors
@@ -102,3 +102,18 @@ Up above, the three `<div>` elements are being selected, while the `<p>` element
 
 ### Common Selector 3 - ***Class Selectors***
 
+Class selectors will select all elements with the given class, whcih is an attribute you can place on an HTML element. You can add a class to an HTML tag and select in in CSS like this:
+
+```html
+<!-- index.html -->
+
+<div class="alert-text">
+    Please agree to our terms of service.
+</div>
+```
+```css
+/* styles.css */
+
+.alert-text{
+    color: red;
+}

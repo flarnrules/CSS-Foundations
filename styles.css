@@ -1,9 +1,14 @@
 /* Universal Selector */
 * {
-    color: purple
+    color: purple;
+}
+
+/* Type Selector */
+div {
+    color: white;
 }
 
 /* Class Selector */
-div {
-    color: white
+.disclaimer{
+    color: red;
 }
