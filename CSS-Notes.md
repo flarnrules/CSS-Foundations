@@ -117,3 +117,32 @@ Class selectors will select all elements with the given class, whcih is an attri
 .alert-text{
     color: red;
 }
+```
+Syntax for class selectors is a period immediately followed by the case-sensitive value of the class attribute. Classes aren't required to be unique, so the same class can be used on multiple elements.
+
+Multiple classes can be added to to a single element with a space separated list, such as `class="alert-text severe-alert"`, where the space designates a second class selector. Never use spaces when declaring classes, use hyphens instead.
+
+### Common Selector 4 - ***ID Selector***
+
+ID selectors are similar to class selectors. They select an element with a given ID, which is another attribute that can be placed on an HTML element.
+
+```html
+<!-- index.html -->
+
+<div id="title">My Awesome 90's Page</div>
+```
+```css
+/* styles.css */
+
+#title {
+    background-color: red;
+}
+```
+
+Instead of a period, for ID selectors we use a hashtag `#` immediately followed by the case-sensitive value of the ID attribute. One common pitfall of ID selectors is overuse of the ID attribute when it isn't needed. Classes typically can get the job done. IDs should be used **sparingly**.
+
+The main difference between an ID and a class is that an element can only have **one** ID, but an element can have **multiple** classes. An ID cannot be repeated on a page, and the ID attribute should not contain any whitespace.
+
+### Common Selector 4 - Grouping Selector
+
+
