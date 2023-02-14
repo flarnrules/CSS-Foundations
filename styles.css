@@ -1,3 +1,9 @@
+/* Universal Selector */
 * {
     color: purple;
+}
+
+/* Class Selector */
+div {
+    color: white;
 }
