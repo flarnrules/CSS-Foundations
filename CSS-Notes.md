@@ -77,7 +77,7 @@ The universal selector will select elements of any type, hence the name "univers
 
 A type selector (otherwise known as an element selector), will select all elements of a given element type, and the syntax is just the name of the element:
 
-```css
+```html
 
 <!-- index.html -->
 
