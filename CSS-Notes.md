@@ -143,6 +143,44 @@ Instead of a period, for ID selectors we use a hashtag `#` immediately followed 
 
 The main difference between an ID and a class is that an element can only have **one** ID, but an element can have **multiple** classes. An ID cannot be repeated on a page, and the ID attribute should not contain any whitespace.
 
-### Common Selector 4 - Grouping Selector
+### Common Selector 5 - ***Grouping Selector***
 
+What if we have two groups of elements that share some of the same style declarations?
+
+```css
+
+.read {
+    color: white;
+    background-color: black;
+    /* several unique declarations */
+}
+
+.unread {
+    color: white;
+    background-color: black;
+    /* several unique declarations */
+}
+```
+
+In the styles above, both `.read` and `.unread` selectors share the `color: white;` and `background-color: black;` declarations, but otherwise have a bunch of unique declarations. To cut down on repetition, we can group these two selectors together as a comma-separated list:
+
+```css
+
+.read,
+.unread {
+    color: white;
+    background-color: black;
+}
+
+.read {
+    /* several unique declarations */
+}
+
+.uread {
+    /* several unique declarations */
+}
+```
+The above solution makes it easier to edit the `color` and `background-color` for both classs at once.
+
+### Common Selector 6 - ***Chaining Selectors***
 
