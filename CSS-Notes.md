@@ -184,3 +184,18 @@ The above solution makes it easier to edit the `color` and `background-color` fo
 
 ### Common Selector 6 - ***Chaining Selectors***
 
+Another way to use selectors is to chain them as a list without any separation. For example, with the following html:
+
+```html
+<div>
+    <div class="subsection header">Latest Posts</div>
+    <p class="subsection preview">This is where a preview for a post might go</p>
+</div>
+```
+There are two elements with the `subsection` class that need some unique styles, but lets say we want to apply a single rule to the element that has `header` as a second class. In order to do this, we can *chain* both the class selectors together in CSS like this:
+
+```css
+
+.subsection.header {
+    color: red;
+}
