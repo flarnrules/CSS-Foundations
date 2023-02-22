@@ -200,3 +200,84 @@ There are two elements with the `subsection` class that need some unique styles,
     color: red;
 }
 ```
+
+The above code has `.subsection.header` selecting any element that has both the subsection *and* `header` classes. Works for any combination of selectors, except for chaining more than one type selector.  
+
+This can be used to chain a class and an ID, like below:
+
+```html
+<div>
+    <div class ="subsection header">Latest Posts</div>
+    <p class="subsection" id="preview">This is where a preview goes. </p>
+</div>
+```
+In css you take the two elements above (subsection header and preview) and style them like this:
+
+```css
+.subsection.header {
+    color: red;
+}
+
+.subsection#preview {
+    color: blue;
+}
+```
+In general, you can't chain more than one type selector, since an element can't be two different types at once. For example, chaining two type selectors like `div` and `p` would give us the selector `divp`, which wouldn't work since the selector would try and find something called <divp> which doesn't exist.
+
+### Common Selector 7 - ***Descendant Combinator***
+
+Combinators allow us to combine multiple selectors differently than grouping or chaining them. They show a relationship between selectors. There are *four* types of combinators. The **Descendant Combinator** is one of them.
+
+A **descendant combinator** will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc) that matches the previous selector.  
+
+Something like `.ancester .child` would select ane lement with the class `child` if it has an ancestor with the class `ancestor`. Alternatively said, `child` will only be selected if it is nested inside of `ancestor`, no matter how deep.
+
+```html
+<div class="ancestor"> <!-- A -->
+    <div class="contents"> <!-- B -->
+        <div class="contents"> <!-- C -->
+        </div>
+    </div>
+</div>
+
+<div class="contents"></div> <!-- D -->
+
+```
+```css
+.ancestor .contents {
+    /* some declarations */
+}
+```
+
+The above css would be selecting B and C, but would not be selecting D. Another example:
+
+```html
+<div class="one">
+    <div class="two">
+        <div class="three">
+        </div>
+    </div>
+</div>
+```
+```css
+.one .three {
+    /* some properties */
+}
+```
+The combinator `.one .three` is saying to select an element with a class of three, only if it has an ancestor with a class of one.
+
+## 4 Properties to Get Started With
+
+This chapter provides a list of properties to start using:
+1. Color and background-color
+2. Typography basics and text align
+3. Image height and width
+
+### 1 Color and Background Color
+
+Both `color` and `background-color` can accept one of several kinds of values. A keyword (like `red` or `transparent`), HEX, RGB, HSL values. Also RGBA (alpha channel is transparency). HSL stands for (hue, saturation, lightness).
+
+A color guide: https://www.w3schools.com/cssref/css_colors_legal.php
+
+
+
