@@ -1,11 +1,13 @@
 /* Universal Selector */
 * {
     color: purple;
+    font: sans-serif; 
 }
 
 /* Type Selector */
 div {
     color: white;
+    background-color: black;
 }
 
 /* Class Selector */

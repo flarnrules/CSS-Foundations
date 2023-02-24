@@ -310,9 +310,22 @@ https://www.w3schools.com/colors/colors_names.asp
 
 If a browser cannot find or doesn't support a font, it will use the next one in the list, then the next one, and so on as fall backs.  It's best practice to provide a list of values for this property, starting with the first font, and then ending with a generic family as a fallback. Example: `font-family: "DejaVu Sans", sans-serif;`
 
-`font-size` affects the size of the font. You cnan say stuff like: 22px, 12px, 30px.
+There are 5 generic font families:
 
-`font-weight` affects the boldness of text. Assuming that the font supports the specified weight. We can use a keyword like `bold` or numeric values beteen 1 and 1000, usually in increments between 100 and 900.
+1. serif
+2. sans-serif
+3. monospace
+4. cursive
+5. fantasy
+
+> 📘 Info
+>
+> Always use a generic font family as the 'font of last resort'. Also if a font is more than one word, it needs to be in quotes to work!
+>
+
+`font-size` affects the size of the font. You can say stuff like: 22px, 12px, 30px.
+
+`font-weight` affects the boldness of text. Assuming that the font supports the specified weight. We can use a keyword like `bold` or numeric values beteen 1 and 1000, usually in increments between 100 and 900. Based on a quick test, Bold 100 through bold 500 is pretty much the same. Big change at bold 600.
 
 
 
