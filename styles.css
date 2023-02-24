@@ -1,7 +1,7 @@
 /* Universal Selector */
 * {
     color: purple;
-    font: sans-serif; 
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /* Type Selector */
