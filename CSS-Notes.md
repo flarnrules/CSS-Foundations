@@ -268,7 +268,7 @@ The combinator `.one .three` is saying to select an element with a class of thre
 
 ## 4 Properties to Get Started With
 
-This chapter provides a list of properties to start using:
+ThIis chapter provides a list of properties to start using:
 1. Color and background-color
 2. Typography basics and text align
 3. Image height and width
@@ -278,6 +278,41 @@ This chapter provides a list of properties to start using:
 Both `color` and `background-color` can accept one of several kinds of values. A keyword (like `red` or `transparent`), HEX, RGB, HSL values. Also RGBA (alpha channel is transparency). HSL stands for (hue, saturation, lightness).
 
 A color guide: https://www.w3schools.com/cssref/css_colors_legal.php
+
+Here are some good colors:
+https://www.w3schools.com/colors/colors_names.asp
+
+- AliceBlue
+- Aquamarine
+- BlueViolet
+- Chartreuse
+- Crimson
+- DarkRed
+- Dark Salmon
+- DeepSkyBlue
+- Gold
+- LemonChiffon
+- LightGreen
+- LightYellow
+- OldLace
+- PapayaWhip
+- SeaShell
+- HoneyDew
+- Ivory
+
+### 2 Topography Basics and Text Align
+
+`font-family` can be a single value or a comma-separated list of values that determine the font used by an element. Each font falls into two categories:
+
+1. "font family name" like `"DejaVu Sans"` (quotes used because of whitespace)
+
+2. "generic family name" like `sans-serif` (usually no quotes)
+
+If a browser cannot find or doesn't support a font, it will use the next one in the list, then the next one, and so on as fall backs.  It's best practice to provide a list of values for this property, starting with the first font, and then ending with a generic family as a fallback. Example: `font-family: "DejaVu Sans", sans-serif;`
+
+`font-size` affects the size of the font. You cnan say stuff like: 22px, 12px, 30px.
+
+`font-weight` affects the boldness of text. Assuming that the font supports the specified weight. We can use a keyword like `bold` or numeric values beteen 1 and 1000, usually in increments between 100 and 900.
 
 
 
