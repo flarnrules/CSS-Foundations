@@ -300,7 +300,7 @@ https://www.w3schools.com/colors/colors_names.asp
 - HoneyDew
 - Ivory
 
-### 2 Topography Basics and Text Align
+### 2 Typography Basics and Text Align
 
 `font-family` can be a single value or a comma-separated list of values that determine the font used by an element. Each font falls into two categories:
 
@@ -323,9 +323,15 @@ There are 5 generic font families:
 > Always use a generic font family as the 'font of last resort'. Also if a font is more than one word, it needs to be in quotes to work!
 >
 
-`font-size` affects the size of the font. You can say stuff like: 22px, 12px, 30px.
+`font-size` affects the size of the font. You can say stuff like: 22px, 12px, 30px. The default `font-size` appears to be around 16px.
 
 `font-weight` affects the boldness of text. Assuming that the font supports the specified weight. We can use a keyword like `bold` or numeric values beteen 1 and 1000, usually in increments between 100 and 900. Based on a quick test, Bold 100 through bold 500 is pretty much the same. Big change at bold 600.
+
+`text-align` will align text horizontally within an element. You can use the common keywords in word processors as a value for this property, such as: `text-align: center`.  
+
+### Image Height and Width
+
+
 
 
 

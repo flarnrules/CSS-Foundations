@@ -40,13 +40,18 @@ div {
 }
 
 .bold700{
-    font-weight: 700
+    font-weight: 700;
 }
 
 .bold800{
-    font-weight: 800
+    font-weight: 800;
 }
 
 .bold900{
-    font-weight: 900
+    font-weight: 900;
+}
+
+.text-align{
+    text-align: center;
+    font-size: 80px;
 }
