@@ -331,6 +331,11 @@ There are 5 generic font families:
 
 ### Image Height and Width
 
+By default, an <img> element's `height` and `width` values will be the same as the actual image file's height and width. To adjust the size without losing the proportions, we use the value of "auto" for the `height` property and then adjust the `width value for the desired width.  
+
+> ℹ️ Best Practices:
+> It is considered best practices to explicitly state a height and width, because this prevents unevent loading and "reserves" space for the images when the page renders.
+
 
 
 

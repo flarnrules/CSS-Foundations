@@ -53,5 +53,15 @@ div {
 
 .text-align{
     text-align: center;
-    font-size: 80px;
+    font-size: 30px;
 }
+
+
+/* this doesn't change the size of the pictures
+it just changes the size of the div that i put the 
+pictures inside*/
+.some-pictures{
+    height:auto;
+    width: 1000px;
+}
+
